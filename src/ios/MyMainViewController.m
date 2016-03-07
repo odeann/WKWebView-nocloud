@@ -278,7 +278,7 @@
   }
 
   //// Fix the iOS 5.1 SECURITY_ERR bug (CB-347), this must be before the webView is instantiated ////
-  NSString* backupWebStorageType = @"cloud"; // default value
+  NSString* backupWebStorageType = @"local"; // default value
 
   id backupWebStorage = [self settingForKey:@"BackupWebStorage"];
   if ([backupWebStorage isKindOfClass:[NSString class]]) {
